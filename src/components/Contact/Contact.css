@@ -1,0 +1,84 @@
+
+.background{
+    min-height: 100vh;
+}
+
+
+.mailer-form{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 150%;
+    background:rgba(168, 167, 167, 0.856);
+    width: 100%;
+    justify-content: center;
+}
+
+.fields{
+    height: 50px;
+    width: 250px;
+    font-size: 1.2em;
+    border-radius:10px;
+}
+.long{
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 4em;
+}
+
+.intro{
+    color:black;
+    text-align: center;
+    font-size: 3em;
+}
+
+.label-content{
+    font-size: 1.5em;
+    color:black;
+}
+
+.edit-space{
+    font-size: 20pt;
+    background:white;
+    border: 1px solid #bcbec0;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    width: 130%;
+    height: 300px;
+}
+
+.align{
+   padding-left:.30%;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline white;
+}
+
+.inputfile{
+    background: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size:.75em;
+    
+}
+
+@media (min-width: 700px){
+   /* .contact{
+       padding-right: 1000px
+   }  */
+
+   .edit-space{
+       height: 400px;
+       width: 181%;
+   }
+
+}

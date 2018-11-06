@@ -1,0 +1,39 @@
+.background-style{
+    background: rgba(168, 167, 167, 0.856);
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-light{
+    background-color: rgba(128, 128, 128, 0.37)!important;
+    width: 100%;
+    background-size: cover;
+}
+
+a{
+    color: black;
+}
+
+.contact-display h1 {
+    margin-left:10%;
+}
+
+.projects{
+    margin: 0 auto;
+    font-size: 2.5em;
+}
+
+/* .dis{
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+} */
+
+.config{
+    width:50%;
+    margin: 0 auto;
+}
