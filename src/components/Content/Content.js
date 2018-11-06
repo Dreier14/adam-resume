@@ -24,7 +24,9 @@ export default class Example extends React.Component {
             <div className= "head">
                 <div className="adam">Adam Dreier</div>
                 <div className="title-dev"> Full Stack Developer </div>
-                <div> adamdreier1@gmail.com </div>
+                <a href="mailto:adamdreier1@gmail.com"> adamdreier1@gmail.com </a>
+                <br/>
+                <a href="tel:6317037453">631-703-7453</a>
             </div>
           </Col>
           <Col xs="auto">
@@ -109,7 +111,7 @@ export default class Example extends React.Component {
             <CardImg top width="50%" src={ANW} alt="Card image cap" />
                 <CardBody style={{background:"lightblue"}} >
                     <CardTitle>Aquatic-N-Writing Rehab</CardTitle>
-                        <CardText>An application that provides hikers with trails and info.</CardText>
+                        <CardText>An application for a children's rehab facility.</CardText>
                         <Button><a className="tags" href="https://www.anwrehab.com/">Aquatic-N-Writing Rehab</a></Button>
                 </CardBody>
           </Card>
@@ -238,7 +240,7 @@ export default class Example extends React.Component {
            <br/>
             Advanced Regents Diploma
             <br/>
-           September 2007 - June 2008
+           September 2007 - June 2011
 
            </p>
            </div>

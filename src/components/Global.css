@@ -24,6 +24,7 @@ a{
 .projects{
     margin: 0 auto;
     font-size: 2.5em;
+    text-align: center;
 }
 
 /* .dis{
@@ -32,8 +33,12 @@ a{
     max-width: 300px; 
     max-height: 300px;
 } */
-
+.row{
+    margin: auto;
+}
+@media(min-width:700px){
 .config{
-    width:50%;
-    margin: 0 auto;
+        width:50%;
+        margin: 0 auto;
+    }
 }

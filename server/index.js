@@ -31,6 +31,11 @@ app.use(bodyParser.json());
 /*********Node Mailer Endpoint ***********************/
 app.post('/api/sendmail', sM.sendMail);
 
+
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+})
+
 app.listen(PORT, () => {
     console.log(`Hey your server is up and working on port ${PORT}🚀`)
 })

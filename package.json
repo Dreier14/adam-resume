@@ -31,11 +31,18 @@
     "typeface-snowburst-one": "^0.0.54"
   },
   "scripts": {
+   
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "now-start": "node server/index.js",
+    "deploy": "now --public --dotenv=.env.prod -d"
   },
+  "now": {
+    "alias": "adam-resume"
+  },
+
   "proxy": {
     "/auth/callback": {
       "target": "http://localhost:3400"

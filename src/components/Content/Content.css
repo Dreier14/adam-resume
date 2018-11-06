@@ -14,7 +14,7 @@
     font-size: 3em;
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 15%;
+    margin-left: 2%;
     margin-top: 10%;
 }
 
@@ -31,6 +31,7 @@
 
 .listed{
     list-style-type: circle black!;
+    font-size: 0.75em;
 }
 
 .top{
@@ -44,7 +45,7 @@
 }
 
 .col-auto {
-    left: -1%;
+    left: -3%;
 }
 
 .adam{
@@ -150,6 +151,14 @@
 
 @media(min-width:600px){
 
+    .col-auto {
+        left: -1%;
+    }
+
+    .summary{
+        margin-left:15%; 
+    }
+
     .ribbon{
         margin-left: 20%;
     }
@@ -182,7 +191,7 @@
     }
 
     .col-auto {
-        left: -7%;
+        left: -13%;
     }
 
     .photo{
@@ -197,7 +206,7 @@
 
 @media(width:360px) and (height:640px){
      .col-auto {
-        left: -3%;
+        left: -7%;
     }
 }
 
@@ -206,3 +215,14 @@
         width:8vw;
     }
 } */
+@media(width:375px) and (height:812px){
+    .col-auto {
+        left: -5%;
+    }
+}
+
+@media(width:375px) and (height:667px){
+    .col-auto {
+        left: -5%;
+    }
+}
