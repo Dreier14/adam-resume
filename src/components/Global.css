@@ -1,5 +1,6 @@
 .background-style{
-    background: rgba(168, 167, 167, 0.856);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.8897934173669468) 0%, rgba(255,174,0,0.6012780112044818) 100%);
     width:100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,7 +9,8 @@
 }
 
 .bg-light{
-    background-color: rgba(128, 128, 128, 0.37)!important;
+    background: rgb(34,193,195)!important;
+    background: linear-gradient(0deg, rgba(34,193,195,0.8897934173669468) 0%, rgba(83,189,152,1) 44%, rgba(255,174,0,0.6012780112044818) 100%);
     width: 100%;
     background-size: cover;
 }
@@ -16,6 +18,7 @@
 a{
     color: black;
 }
+
 
 .contact-display h1 {
     margin-left:10%;
@@ -27,12 +30,6 @@ a{
     text-align: center;
 }
 
-/* .dis{
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
-} */
 .row{
     margin: auto;
 }

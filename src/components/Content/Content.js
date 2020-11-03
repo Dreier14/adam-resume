@@ -12,7 +12,78 @@ import WB from "./WB.png"
 
 
 export default class Example extends React.Component {
+  
   render() {
+
+    
+    let frontEnd = 
+    ["React",
+    "Angular",
+    "Redux",
+    "Styled Components (CSS in JS)",
+    "Sass",
+    "Progressive Web Apps",
+    "HTML 5",
+    "CSS3",
+    "JavaScript",
+    "TypeScript",
+    "BootStrap"]
+
+    let backEnd =
+    [ "Node",
+    "Express",
+    "PostgreSQL",
+    "Graphql",
+    "NPM",
+    "Git",
+    "Jest/Sinon",
+    "Postman",
+    "Java",
+    "Python(Flask)",
+    "SOA",
+    "DB2/Mainframe/Z/os"]
+
+    let virtual =
+    [ "Linux",
+    "Unix",
+    "Windows Server",
+    "VMware",
+    "Docker"
+    ]
+
+    let logging=
+    [
+    "Splunk",
+    "Kibana",
+    "Dynatrace",
+    "Grafana"
+    ]
+
+  
+    let mappedFront = frontEnd.map((skill,front)=>{
+     return(
+      <li key={front}>{skill}</li>
+     )
+    })
+
+    let mappedBack = backEnd.map((skill,back)=>{
+      return(
+       <li key={back}>{skill}</li>
+      )
+     })
+
+     let mappedVirtual= virtual.map((skill,virt)=>{
+      return(
+       <li key={virt}>{skill}</li>
+      )
+     })
+
+     let mappedLog= logging.map((skill, log)=>{
+      return(
+       <li key={log}>{skill}</li>
+      )
+     })
+  
     return (
       <Container>
         <Row>
@@ -44,46 +115,37 @@ export default class Example extends React.Component {
         <Row>
            <div className="mobile">Technologies</div>
         </Row>
+        <div className="format">
         <Row >
-              <div className="assets"> 
+              <div className="assets" class="col-md-3"> 
               <div className="techs">Front-End Development</div>
                   <div className="skill">
-                        <li>React</li>
-                        <li>Angular</li>
-                        <li>Redux</li>
-                        <li>Styled Components (CSS in JS)</li>
-                        <li>Sass</li>
-                        <li>Progressive Web Apps</li>
-                        <li>HTML 5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>BootStrap</li>
+                        {mappedFront}
                   </div>
               </div>
-              <div className="assets"> 
+              <br/>
+              <div className="assets" class="col-md-3"> 
                 <div className="techs">Back-End Development</div>
                   <div className="skill">
-                        <li>Node</li>
-                        <li>Express</li>
-                        <li>PostgreSQL</li>
-                        <li>Graphql</li>
-                        <li>NPM</li>
-                        <li>Git</li>
-                        <li>Jest/Sinon</li>
-                        <li>Postman</li>
-                        <li>Cypress.io</li>
+                       {mappedBack}
                   </div>
               </div>
-              <div className="assets">
-              <div className="techs">UX/UI Design</div>
+              <br/>
+              <div className="assets" class="col-md-3">
+                  <div className="techs">Virtualization/OS</div>
                   <div className="skill">
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                     <li>Adobe Wireframes</li>
+                    {mappedVirtual}
+                  </div>
+              </div>
+               <br/>
+              <div className="assets" class="col-md-3">
+                  <div className="techs">Logging</div>
+                  <div className="skill">
+                    {mappedLog}
                   </div>
               </div>
         </Row>
+        </div>
         <Row>
            <div className="mobile">Projects</div>
         </Row>
@@ -202,12 +264,10 @@ export default class Example extends React.Component {
           <br/>
           <br/>
           <Row>
-            <Col xs="auto">
-             <img className="pic" src={Adam}/> 
-            </Col>
-            <Col>
-              <div className="summary">Summary</div>
-            </Col>
+
+            <Row>
+              <div className="mobile" style={{textDecoration:"underline"}}>Summary</div>
+            </Row>
             <br/>
             <div className="assets">
             <p>
@@ -222,11 +282,11 @@ export default class Example extends React.Component {
            </div>
         </Row>
         <Row>
-          <div className="mobile">Education</div>
+          <div className="mobile" style={{textDecoration:"underline"}}>Education</div>
         </Row>
          <Row>
-         <div className="ribbon" style={{display: "flex", flexDirection: "row", padding:"5%"}}>
-            <p style={{margin:"5%"}}>
+         <div className="ribbon" >
+            <p class="col-md-4">
             <b>DevMountain, Phoenix, AZ </b>
             <br/>
             Web Dev Immersive
@@ -235,7 +295,7 @@ export default class Example extends React.Component {
 
            </p>
           
-           <p style={{margin:"5%"}}>
+           <p class="col-md-4">
             <b>Commack High School, Commack, NY </b>
            <br/>
             Advanced Regents Diploma
